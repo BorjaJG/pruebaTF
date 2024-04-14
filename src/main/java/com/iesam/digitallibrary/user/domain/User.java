@@ -120,5 +120,18 @@ public class User {
                 ", additionalData='" + additionalData + '\'' +
                 '}';
     }
+    public String toStringCarnet() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("───────────────────────\n");
+        sb.append("        CARNET\n");
+        sb.append("───────────────────────\n");
+        sb.append("User ID:        ").append(userID).append("\n");
+        sb.append("Name:           ").append(name).append("\n");
+        sb.append("Email:          ").append(email).append("\n");
+        sb.append("Phone Number:   ").append(phoneNumber).append("\n");
+        sb.append("Address:        ").append(address).append("\n");
+        sb.append("───────────────────────\n");
+        return sb.toString();
+    }
 
 }
