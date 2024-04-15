@@ -16,4 +16,9 @@ public class UserDataRepository implements UserRepository {
 
         return false;
     }
+
+    @Override
+    public User obtain(String userId) {
+        return this.userFileLocalDataSource.findById(userId);
+    }
 }

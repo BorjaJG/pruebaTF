@@ -13,6 +13,8 @@ public class Main {
                 "Regular", "Active", "No history", "No fines",
                 "No transactions", "Email", "User",
                 "Additional data"));
+
+        UserPresentation.getUser("1");
     }
 
 
