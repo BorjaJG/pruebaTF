@@ -9,4 +9,9 @@ public class Stun1UserDataRepository implements UserRepository {
 
         return false;
     }
+
+    @Override
+    public  User obtain(String userId) {
+        return null;
+    }
 }
