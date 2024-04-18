@@ -10,20 +10,20 @@ public class User {
        Estos son datos clave para gestionar la información del usuario en el sistema.
      */
 
-    private final String userID;
-    private final String name;
-    private final String email;
-    private final String  phoneNumber;
-    private final String address;
-    private final String registrationDate;
-    private final String userType;
-    private final String accountStatus;
-    private final String loanHistory;
-    private final String fines;
-    private final String transactionHistory;
-    private final String notificationPreferences;
-    private final String userRole;
-    private final String additionalData;
+    public final String userID;
+    public final String name;
+    public final String email;
+    public final String  phoneNumber;
+    public final String address;
+    public final String registrationDate;
+    public final String userType;
+    public final String accountStatus;
+    public final String loanHistory;
+    public final String fines;
+    public final String transactionHistory;
+    public final String notificationPreferences;
+    public final String userRole;
+    public final String additionalData;
 
     public User(String userID, String name, String email, String phoneNumber,
                             String address, String registrationDate, String userType, String accountStatus,
