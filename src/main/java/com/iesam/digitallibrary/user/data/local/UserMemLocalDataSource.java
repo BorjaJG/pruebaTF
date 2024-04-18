@@ -10,7 +10,7 @@ public class UserMemLocalDataSource {
     private Map<String, User> dataStore = new TreeMap<>();
 
     public void save(User user) {
-        dataStore.put(user.getUserID(), user);
+        dataStore.put(user.userID, user);
     }
 
     public void saveList(List<User> users) {
