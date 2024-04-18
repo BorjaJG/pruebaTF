@@ -1,11 +1,13 @@
 package com.iesam.digitallibrary.user.newUser.domain;
 
+import com.iesam.digitallibrary.user.domain.NewUserUseCase;
 import com.iesam.digitallibrary.user.domain.User;
 import com.iesam.digitallibrary.user.newUser.data.Stun1UserDataRepository;
 import org.junit.jupiter.api.*;
 
 class SaveUserUseCaseTest {
     private Stun1UserDataRepository stun1UserDataRepository;
+
     @BeforeEach
     void setUp() {
         stun1UserDataRepository = new Stun1UserDataRepository();
@@ -28,21 +30,20 @@ class SaveUserUseCaseTest {
         Assertions.assertFalse(result);
     }
     @Test
-    public void cuandoObtengoUnValorNuloEntoncesNoMuestroElCarnet() {
+    public void cuandoCadaCampoEsNuloEntoncesNoMuestroElCarnet2() {
         // Given
-        User userNew = new User("null", "3", "email@example.com",
-                "123456789", "123 Street Ave", "2024-04-15",
-                "Regular", "Active", "No history", "No fines",
-                "No transactions", "Email", "User","null"
-        );
+        User userNew = new User(null, null, null, null, null,
+                null, null, null, null, null,
+                null, null, null, null);
 
         // When
         boolean result = stun1UserDataRepository.save(userNew);
 
         // Then
         Assertions.assertFalse(result);
-        }
-
     }
+
+
+}
 
 
