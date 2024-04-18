@@ -34,6 +34,7 @@ public class Main {
 
     public static void showMenu() {
         while (true) {
+            System.out.println("\n Bienvenido al sistema de la biblioteca");
             System.out.println("\n----------------------------------");
             System.out.println("|     User Management System     |");
             System.out.println("----------------------------------");
