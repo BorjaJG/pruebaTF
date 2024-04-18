@@ -146,6 +146,7 @@ public class Main {
             // Si se encontró un usuario, mostrar su información
             System.out.println("¡Usuario encontrado con la ID " + userId + ":");
             System.out.println(user.toStringCarnet());
+            System.out.println("¡Adios");
         }
 
     }
