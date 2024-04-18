@@ -45,62 +45,6 @@ public class User {
         this.additionalData = additionalData;
     }
 
-    public String getUserID() {
-        return userID;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getRegistrationDate() {
-        return registrationDate;
-    }
-
-    public String getUserType() {
-        return userType;
-    }
-
-    public String getAccountStatus() {
-        return accountStatus;
-    }
-
-    public String getLoanHistory() {
-        return loanHistory;
-    }
-
-    public String getFines() {
-        return fines;
-    }
-
-    public String getTransactionHistory() {
-        return transactionHistory;
-    }
-
-    public String getNotificationPreferences() {
-        return notificationPreferences;
-    }
-
-    public String getUserRole() {
-        return userRole;
-    }
-
-    public String getAdditionalData() {
-        return additionalData;
-    }
-
     @Override
     public String toString() {
         return "UserPresentation{" +
