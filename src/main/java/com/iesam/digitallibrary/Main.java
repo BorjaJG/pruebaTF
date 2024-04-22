@@ -6,6 +6,7 @@ import com.iesam.digitallibrary.user.domain.User;
 import java.util.*;
 
 
+import static com.iesam.digitallibrary.user.presentation.UserPresentation.getUser;
 import static com.iesam.digitallibrary.user.presentation.UserPresentation.saveUser;
 
 public class Main {
@@ -140,14 +141,18 @@ public class Main {
     }
 
     public static void searchUser() {
-        // Implementar la lógica para buscar un usuario
+
+        System.out.println("Enter User Information:");
+        System.out.print("ID: ");
+        String id = scanner.nextLine();
+        getUser(id);
+
+
     }
 
     public static void listAllUsers() {
-        System.out.println("List of Users:");
-        for (User user : users) {
-            System.out.println(user);
-        }
+        // Implementar la lógica para listar los usurios
+
     }
 
 
