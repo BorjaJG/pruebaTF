@@ -17,6 +17,7 @@ public class UserPresentation {
 
         GetUserUseCase getUserUseCase = new GetUserUseCase(new UserDataRepository());
         User user = getUserUseCase.execute(userId);
+
         System.out.println(user.toStringCarnet());
         return user;
     }
