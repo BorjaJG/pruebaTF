@@ -21,12 +21,21 @@ public class Main {
 
     public static void loadInitialData() {
         // Cargar datos iniciales de usuarios
-        users.add(new User("1", "3", "email@example.com", "123456789", "123 Street Ave", "2024-04-15", "Regular", "Active", "No history", "No fines", "No transactions", "Email", "User", "Null"));
-        users.add(new User("2", "3", "email@example.com", "123456789", "123 Street Ave", "2024-04-15", "Regular", "Active", "No history", "No fines", "No transactions", "Email", "User", "Null"));
+        users.add(new User("1", "3", "email@example.com",
+                "123456789", "123 Street Ave", "2024-04-15",
+                "Regular", "Active", "No history", "No fines",
+                "No transactions", "Email", "User","Null"
+        ));
+        users.add(new User("2", "3", "email@example.com",
+                "123456789", "123 Street Ave", "2024-04-15",
+                "Regular", "Active", "No history", "No fines",
+                "No transactions", "Email", "User", "Null"
+        ));
     }
 
     public static void showMenu() {
         while (true) {
+            System.out.println("\n Bienvenido al sistema de la biblioteca");
             System.out.println("\n----------------------------------");
             System.out.println("|     User Management System     |");
             System.out.println("----------------------------------");
@@ -68,7 +77,7 @@ public class Main {
         }
     }
 
-    public static void addUser() {
+    public static void  addUser() {
 
         System.out.println("Enter User Information:");
         System.out.print("ID: ");
@@ -120,6 +129,7 @@ public class Main {
         saveUser(user);
 
 
+
     }
 
     public static void modifyUser() {
@@ -152,10 +162,8 @@ public class Main {
     }
 
     public static void listAllUsers() {
-        System.out.println("List of Users:");
-        for (User user : users) {
-            System.out.println(user);
-        }
+        // Implementar la lógica para listar los usurios
+
     }
 
 

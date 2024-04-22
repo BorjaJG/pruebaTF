@@ -45,7 +45,7 @@ public class UserFileLocalDataSource {
     public User findById(String id) {
         List<User> user = findAll();
         for (User model : user) {
-            if (Objects.equals(model.getUserID(), id)) {
+            if (Objects.equals(model.userID, id)) {
                 return model;
             }
         }
@@ -79,7 +79,7 @@ public class UserFileLocalDataSource {
         List<User> newList = new ArrayList<>();
         List<User> models = findAll();
         for (User model : models) {
-            if (model.getUserID()!= modelId) {
+            if (model.userID!= modelId) {
                 newList.add(model);
             }
         }
