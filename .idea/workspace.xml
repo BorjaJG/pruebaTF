@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Eliminacion del codigo de prueba">
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de deleted User">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteca.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/DeleteUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/DeleteUserCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,10 +343,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714036777541</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Creacion de la funcionalidad de deleted User">
+      <option name="closed" value="true" />
+      <created>1714040516085</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714040516085</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="b5fcb0a3-0642-4093-976d-79ec88f24f60" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -357,6 +377,11 @@
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+        <entry key="b5fcb0a3-0642-4093-976d-79ec88f24f60">
+          <value>
+            <State />
           </value>
         </entry>
       </map>
@@ -382,32 +407,10 @@
     <MESSAGE value="Creacion de la funcionalidad de listar usuarios" />
     <MESSAGE value="Agrgada y actualizada funcionalidad de listar usuarios" />
     <MESSAGE value="Eliminacion del codigo de prueba" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminacion del codigo de prueba" />
+    <MESSAGE value="Creacion de la funcionalidad de deleted User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcionalidad de deleted User" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
-          <line>31</line>
-          <properties class="com.iesam.digitallibrary.user.presentation.UserPresentation" method="getUsers">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.iesam.digitallibrary.user.data.UserDataRepository" memberName="userFileLocalDataSource" />

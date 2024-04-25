@@ -1,6 +1,8 @@
 package com.iesam.digitallibrary;
 
 
+import com.iesam.digitallibrary.user.data.UserDataRepository;
+import com.iesam.digitallibrary.user.domain.DeleteUserCase;
 import com.iesam.digitallibrary.user.domain.User;
 
 import java.util.*;
@@ -63,7 +65,7 @@ public class Main {
         }
     }
 
-    public static void  addUser() {
+    public static void addUser() {
 
         System.out.println("Enter User Information:");
         System.out.print("ID: ");
@@ -115,7 +117,6 @@ public class Main {
         saveUser(user);
 
 
-
     }
 
     public static void modifyUser() {
@@ -123,11 +124,24 @@ public class Main {
     }
 
     public static void deleteUser() {
-        // Implementar la lógica para eliminar un usuario
-    }
 
+        System.out.println("Por favor, introduce la ID del usuario que deseas eliminar:");
+
+        // Verificar si hay una entrada disponible antes de intentar leerla
+        if (scanner.hasNextLine()) {
+            String userId = scanner.next();
+
+            DeleteUserCase deleteUserCase = new DeleteUserCase(new UserDataRepository());
+
+            deleteUserCase.execute(userId);
+            System.out.println("Eliminado " +userId);
+        } else {
+            System.out.println("No se proporcionó ninguna entrada.");
+        }
+
+
+    }
     public static void searchUser() {
-        // Solicitar la ID del usuario al usuario
         System.out.println("Por favor, introduce la ID del usuario:");
         String userId = scanner.nextLine();
 
@@ -142,9 +156,8 @@ public class Main {
             // Si se encontró un usuario, mostrar su información
             System.out.println("¡Usuario encontrado con la ID " + userId + ":");
             System.out.println(user.toStringCarnet());
-            System.out.println("¡Adios");
+            System.out.println("¡Adiós!");
         }
-
     }
 
     public static void listAllUsers() {
@@ -157,8 +170,6 @@ public class Main {
             // Print other user details as needed
 
         }
-
-
 
 
     }

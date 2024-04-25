@@ -35,6 +35,12 @@ public class UserDataRepository implements UserRepository {
     }
 
     @Override
+    public void delete(String userId) {
+        this.userFileLocalDataSource.delete(userId);
+    }
+
+
+    @Override
     public User obtain(String userId) {
         return userFileLocalDataSource.findById(userId);
     }

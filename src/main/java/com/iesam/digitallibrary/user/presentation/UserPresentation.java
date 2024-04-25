@@ -1,10 +1,8 @@
 package com.iesam.digitallibrary.user.presentation;
 
 import com.iesam.digitallibrary.user.data.UserDataRepository;
-import com.iesam.digitallibrary.user.domain.GetUserUseCase;
-import com.iesam.digitallibrary.user.domain.GetUsersUseCase;
-import com.iesam.digitallibrary.user.domain.NewUserUseCase;
-import com.iesam.digitallibrary.user.domain.User;
+import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
+import com.iesam.digitallibrary.user.domain.*;
 
 import java.util.ArrayList;
 
@@ -25,7 +23,6 @@ public class UserPresentation {
 
         GetUserUseCase getUserUseCase = new GetUserUseCase(new UserDataRepository());
         User user = getUserUseCase.execute(userId);
-
         System.out.println(user.toStringCarnet());
         return user;
     }
@@ -33,6 +30,11 @@ public class UserPresentation {
         GetUsersUseCase getUsersUseCase = new GetUsersUseCase(new UserDataRepository());
         ArrayList<User> users = getUsersUseCase.obtenerlistado();
         return users;
+
+    }
+    public static  void  deleteUser(String userId){
+        DeleteUserCase deleteUserCase = new DeleteUserCase(new UserDataRepository());
+        deleteUserCase.execute(userId);
 
     }
 }

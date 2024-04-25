@@ -76,11 +76,11 @@ public class UserFileLocalDataSource {
         return new ArrayList<>();
     }
 
-    public void delete(String modelId) {
+    public void delete(String userId) {
         List<User> newList = new ArrayList<>();
         List<User> models = findAll();
         for (User model : models) {
-            if (model.userID!= modelId) {
+            if (model.userID!= userId) {
                 newList.add(model);
             }
         }
