@@ -31,7 +31,7 @@ public class UserPresentation {
     }
     public static ArrayList<User> getUsers() {
         GetUsersUseCase getUsersUseCase = new GetUsersUseCase(new UserDataRepository());
-        ArrayList<User> users = getUsersUseCase.execute();
+        ArrayList<User> users = getUsersUseCase.obtenerlistado();
         return users;
 
     }

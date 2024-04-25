@@ -20,10 +20,11 @@ public class UserFileLocalDataSource {
     private final Type typeList = new TypeToken<ArrayList<User>>() {
     }.getType();
 
-    public void save(User user) {
+    public boolean save(User user) {
         List<User> users = findAll();
         users.add(user);
         saveToFile(users);
+        return false;
     }
 
     public void saveList(List<User> users) {

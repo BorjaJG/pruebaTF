@@ -3,35 +3,30 @@ package com.iesam.digitallibrary.user.data;
 import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
 import com.iesam.digitallibrary.user.domain.User;
 import com.iesam.digitallibrary.user.domain.UserRepository;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class UserDataRepository implements UserRepository {
 
-    public UserFileLocalDataSource userFileLocalDataSource = new UserFileLocalDataSource();
-    public final Map<String, User> userMap = new HashMap<>();
-    public final ArrayList<User> users = new ArrayList<>();
-    public static UserRepository instance=null;
-    public static UserDataRepository newInstance(){
-        if(instance==null){
-            instance=new UserDataRepository();
-        }
-        return (UserDataRepository) instance;
+    private final UserFileLocalDataSource userFileLocalDataSource = new UserFileLocalDataSource();
+    private static UserRepository instance = null;
+
+    public UserDataRepository() {
+        // Private constructor to prevent instantiation outside this class
     }
 
+    public static UserRepository newInstance() {
+        if (instance == null) {
+            instance = new UserDataRepository();
+        }
+        return instance;
+    }
 
     @Override
     public boolean save(User user) {
-
-       this.userFileLocalDataSource.save(user);
-
-        return false;
-    }
-
-    @Override
-    public User obtain(String userId) {
-        return this.userFileLocalDataSource.findById(userId);
+        return userFileLocalDataSource.save(user);
     }
 
     @Override
@@ -39,5 +34,12 @@ public class UserDataRepository implements UserRepository {
         return userFileLocalDataSource.findAll();
     }
 
-
+    @Override
+    public User obtain(String userId) {
+        return userFileLocalDataSource.findById(userId);
+    }
 }
+
+
+
+

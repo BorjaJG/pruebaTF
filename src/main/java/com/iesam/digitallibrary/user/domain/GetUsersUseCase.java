@@ -11,7 +11,7 @@ public class GetUsersUseCase {
 
 
 
-    public ArrayList<User> execute() {
-        return  userRepository.list();
+    public ArrayList<User> obtenerlistado(){
+        return userRepository.list();
     }
 }
