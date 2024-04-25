@@ -30,7 +30,7 @@ class SaveUserUseCaseTest {
         Assertions.assertFalse(result);
     }
     @Test
-    public void cuandoObtengoUnValorNuloEntoncesNoMuestroElCarnet() {
+    public void cuandoCadaCampoEsNuloEntoncesNoMuestroElCarnet2() {
         // Given
         User userNew = new User(null, null, null, null, null,
                 null, null, null, null, null,
@@ -41,8 +41,9 @@ class SaveUserUseCaseTest {
 
         // Then
         Assertions.assertFalse(result);
-        }
-
     }
+
+
+}
 
 
