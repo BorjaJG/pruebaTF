@@ -1,5 +1,7 @@
 package com.iesam.digitallibrary.user.domain;
 
+import java.util.ArrayList;
+
 public interface UserRepository {
 
 
@@ -7,4 +9,9 @@ public interface UserRepository {
 
 
     User obtain(String userId);
+
+
+    ArrayList<User> list();
+
+
 }

@@ -10,28 +10,36 @@ import java.util.Map;
 
 public class UserDataRepository implements UserRepository {
 
-    public UserFileLocalDataSource userFileLocalDataSource = new UserFileLocalDataSource();
-    public final Map<String, User> userMap = new HashMap<>();
-    public final ArrayList<User> users = new ArrayList<>();
-    public static UserRepository instance=null;
-    public static UserDataRepository newInstance(){
-        if(instance==null){
-            instance=new UserDataRepository();
+    private final UserFileLocalDataSource userFileLocalDataSource = new UserFileLocalDataSource();
+    private static UserRepository instance = null;
+
+    public UserDataRepository() {
+        // Private constructor to prevent instantiation outside this class
+    }
+
+    public static UserRepository newInstance() {
+        if (instance == null) {
+            instance = new UserDataRepository();
         }
-        return (UserDataRepository) instance;
+        return instance;
     }
 
     @Override
     public boolean save(User user) {
+        return userFileLocalDataSource.save(user);
+    }
 
-       this.userFileLocalDataSource.save(user);
-
-        return false;
+    @Override
+    public ArrayList<User> list() {
+        return userFileLocalDataSource.findAll();
     }
 
     @Override
     public User obtain(String userId) {
-        return this.userFileLocalDataSource.findById(userId);
+        return userFileLocalDataSource.findById(userId);
     }
 }
+
+
+
 

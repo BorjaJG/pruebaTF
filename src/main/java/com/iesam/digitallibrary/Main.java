@@ -5,9 +5,7 @@ import com.iesam.digitallibrary.user.domain.User;
 
 import java.util.*;
 
-
-import static com.iesam.digitallibrary.user.presentation.UserPresentation.getUser;
-import static com.iesam.digitallibrary.user.presentation.UserPresentation.saveUser;
+import static com.iesam.digitallibrary.user.presentation.UserPresentation.*;
 
 public class Main {
     static ArrayList<User> users = new ArrayList<>();
@@ -15,23 +13,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        loadInitialData();
+
         showMenu();
+
     }
 
-    public static void loadInitialData() {
-        // Cargar datos iniciales de usuarios
-        users.add(new User("1", "3", "email@example.com",
-                "123456789", "123 Street Ave", "2024-04-15",
-                "Regular", "Active", "No history", "No fines",
-                "No transactions", "Email", "User","Null"
-        ));
-        users.add(new User("2", "3", "email@example.com",
-                "123456789", "123 Street Ave", "2024-04-15",
-                "Regular", "Active", "No history", "No fines",
-                "No transactions", "Email", "User", "Null"
-        ));
-    }
 
     public static void showMenu() {
         while (true) {
@@ -141,17 +127,39 @@ public class Main {
     }
 
     public static void searchUser() {
+        // Solicitar la ID del usuario al usuario
+        System.out.println("Por favor, introduce la ID del usuario:");
+        String userId = scanner.nextLine();
 
-        System.out.println("Enter User Information:");
-        System.out.print("ID: ");
-        String id = scanner.nextLine();
-        getUser(id);
+        // Obtener el usuario utilizando la ID proporcionada
+        User user = getUser(userId);
 
+        // Verificar si se encontró algún usuario con la ID proporcionada
+        if (user == null) {
+            // Si no se encontró ningún usuario, mostrar un mensaje informativo
+            System.out.println("Lo siento, no se encontró ningún usuario con la ID: " + userId);
+        } else {
+            // Si se encontró un usuario, mostrar su información
+            System.out.println("¡Usuario encontrado con la ID " + userId + ":");
+            System.out.println(user.toStringCarnet());
+            System.out.println("¡Adios");
+        }
 
     }
 
     public static void listAllUsers() {
-        // Implementar la lógica para listar los usurios
+        List<User> users = getUsers();
+
+        // Iterate through the list of users and print their details
+        for (User user : users) {
+            System.out.println("ID: " + user.userID);
+            System.out.println("Name: " + user.name);
+            // Print other user details as needed
+
+        }
+
+
+
 
     }
 

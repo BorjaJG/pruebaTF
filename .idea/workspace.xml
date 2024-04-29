@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Agrgada y actualizada funcionalidad de listar usuarios">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2024_13_28__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ed-digital-library" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feature/3/get_user" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="feature/3/get_user" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/3/get_user" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BorjaJG&quot;
+  }
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="aa79b3db-ef04-4213-8d6f-5eabbeddeb5d" />
+        <option name="url" value="https://github.com/BorjaJG/ed-digital-library.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2f5qXeM2JUXiV9xMfczQShWD7Qr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.GetUserUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetUsersCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SaveUserUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ed-digital-library [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/5/get__users&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borja/Desktop/ed-digital-library/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\test\java" />
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\.github" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.iesam.digitallibrary.user.domain" />
+      <recent name="com.iesam.digitallibrary.user.newUser.domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.iesam.digitallibrary.user.newUser.domain" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="ShelveChangesManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="" />
+      <created>1713101330893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713101330893</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Creacion del proyecto">
+      <option name="closed" value="true" />
+      <created>1713103178973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713103178973</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Creacion del proyecto">
+      <option name="closed" value="true" />
+      <created>1713116338689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713116338689</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se crea la estructura inicial de clases.">
+      <option name="closed" value="true" />
+      <created>1713120165472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713120165472</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementación de las clases y de casos de usos de Usuario">
+      <option name="closed" value="true" />
+      <created>1713128590713</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713128590713</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementación del caso de uso de Usuario">
+      <option name="closed" value="true" />
+      <created>1713133216094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713133216094</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implementación del caso de uso de Usuario">
+      <option name="closed" value="true" />
+      <created>1713169028057</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713169028057</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Stun1UserDataRepository.java Agregado&#10;SaveUserUseCaseTest.java Agregado&#10;UserDataRepository.java Modificado&#10;Se ha agregado el testing para el caso de uso de Agragar un usuario nuevo.">
+      <option name="closed" value="true" />
+      <created>1713194799135</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713194799135</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Se crea la estructura inicial de la clase Usuario con su caso&#10;de uso COrespondinete.&#10;UserDataRepository.java -&gt; Actulizado&#10;GetUserUseCase.java -&gt; Añadido&#10;UserRepository.java -&gt; Actulizado&#10;UserPresentation.java -&gt; Actulizado&#10;Main.java -&gt; Actulizado">
+      <option name="closed" value="true" />
+      <created>1713203237922</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713203237922</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Se creado la estructura de presentación .&#10;&#10;Main.java -&gt; Actulizado">
+      <option name="closed" value="true" />
+      <created>1713428496786</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428496786</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Se agrega el test de Obtener un usuario &#10;&#10;GetUserUseCaseTest.java --&gt; Agregado&#10;Stun1UserDataRepository.java --&gt; Actualizado">
+      <option name="closed" value="true" />
+      <created>1713431830968</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713431830968</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Se agrega el test de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado">
+      <option name="closed" value="true" />
+      <created>1713434392447</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713434392447</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Se modificado  el main de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado">
+      <option name="closed" value="true" />
+      <created>1713434585992</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713434585992</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Se ha modificado  el main de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado">
+      <option name="closed" value="true" />
+      <created>1713434607797</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713434607797</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&#10;User.java --&gt; Actualizado">
+      <option name="closed" value="true" />
+      <created>1713447886938</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713447886938</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Correciones en la PR.">
+      <option name="closed" value="true" />
+      <created>1713450210963</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713450210963</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Agrego la estructura del main de menu.">
+      <option name="closed" value="true" />
+      <created>1713451700633</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713451700633</updated>
+    </task>
+    <task id="LOCAL-00017" summary="añadido el gitingnore">
+      <option name="closed" value="true" />
+      <created>1713452433536</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713452433536</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Agrgado al main la  logica de buarcar usuario por id">
+      <option name="closed" value="true" />
+      <created>1713782378760</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713782378760</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Creacion de la funcionalidad de listar usuarios">
+      <option name="closed" value="true" />
+      <created>1713785457641</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713785457641</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Agrgada y actualizada funcionalidad de listar usuarios">
+      <option name="closed" value="true" />
+      <created>1714034993750</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714034993750</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Agrgada y actualizada funcionalidad de listar usuarios">
+      <option name="closed" value="true" />
+      <created>1714399299520</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714399299520</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creacion del proyecto" />
+    <MESSAGE value="Se crea la estructura inicial de clases." />
+    <MESSAGE value="Implementación de las clases y de casos de usos de Usuario" />
+    <MESSAGE value="Implementación del caso de uso de Usuario" />
+    <MESSAGE value="Stun1UserDataRepository.java Agregado&#10;SaveUserUseCaseTest.java Agregado&#10;UserDataRepository.java Modificado&#10;Se ha agregado el testing para el caso de uso de Agragar un usuario nuevo." />
+    <MESSAGE value="Se crea la estructura inicial de la clase Usuario con su caso&#10;de uso COrespondinete.&#10;UserDataRepository.java -&gt; Actulizado&#10;GetUserUseCase.java -&gt; Añadido&#10;UserRepository.java -&gt; Actulizado&#10;UserPresentation.java -&gt; Actulizado&#10;Main.java -&gt; Actulizado" />
+    <MESSAGE value="Se creado la estructura de presentación .&#10;&#10;Main.java -&gt; Actulizado" />
+    <MESSAGE value="Se agrega el test de Obtener un usuario &#10;&#10;GetUserUseCaseTest.java --&gt; Agregado&#10;Stun1UserDataRepository.java --&gt; Actualizado" />
+    <MESSAGE value="Se agrega el test de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado" />
+    <MESSAGE value="Se modificado  el main de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado" />
+    <MESSAGE value="Se ha modificado  el main de Obtener un usuario &#10;&#10;Main.java --&gt; Actualizado" />
+    <MESSAGE value="&#10;User.java --&gt; Actualizado" />
+    <MESSAGE value="Correciones en la PR." />
+    <MESSAGE value="Agrego la estructura del main de menu." />
+    <MESSAGE value="añadido el gitingnore" />
+    <MESSAGE value="Agrgado al main la  logica de buarcar usuario por id" />
+    <MESSAGE value="Creacion de la funcionalidad de listar usuarios" />
+    <MESSAGE value="Agrgada y actualizada funcionalidad de listar usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrgada y actualizada funcionalidad de listar usuarios" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java</url>
+          <line>31</line>
+          <properties class="com.iesam.digitallibrary.user.presentation.UserPresentation">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.iesam.digitallibrary.user.data.UserDataRepository" memberName="userFileLocalDataSource" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
