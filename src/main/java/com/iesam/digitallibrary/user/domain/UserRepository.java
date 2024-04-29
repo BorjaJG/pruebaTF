@@ -6,5 +6,5 @@ public interface UserRepository {
     boolean save(User user);
 
 
-
+    User obtain(String userId);
 }
