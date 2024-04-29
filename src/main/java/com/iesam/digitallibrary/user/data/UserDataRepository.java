@@ -3,7 +3,7 @@ package com.iesam.digitallibrary.user.data;
 import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
 import com.iesam.digitallibrary.user.domain.User;
 import com.iesam.digitallibrary.user.domain.UserRepository;
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,14 +21,6 @@ public class UserDataRepository implements UserRepository {
         return (UserDataRepository) instance;
     }
 
-=======
-
-public class UserDataRepository implements UserRepository {
-
-
-    UserFileLocalDataSource userFileLocalDataSource = new UserFileLocalDataSource();
->>>>>>> master
-
     @Override
     public boolean save(User user) {
 
@@ -42,3 +34,4 @@ public class UserDataRepository implements UserRepository {
         return this.userFileLocalDataSource.findById(userId);
     }
 }
+
