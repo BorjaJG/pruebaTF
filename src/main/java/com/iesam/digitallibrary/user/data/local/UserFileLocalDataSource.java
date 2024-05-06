@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
-public class UserFileLocalDataSource {
+public class UserFileLocalDataSource  implements UserLocalDataSource {
 
     private String nameFile = "Biblioteca.txt";
 
@@ -85,5 +85,10 @@ public class UserFileLocalDataSource {
             }
         }
         saveList(newList);
+    }
+
+    @Override
+    public void modifyUser(User user) {
+
     }
 }

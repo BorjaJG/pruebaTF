@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de deleted User">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2024_13_28_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2024_13_28__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteca.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/DeleteUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/DeleteUserCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserMemLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserMemLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +54,12 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="feature/3/get_user" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -118,6 +121,7 @@
     "Gradle.GetUsersCaseTest.executor": "Run",
     "Gradle.SaveUserUseCaseTest.executor": "Run",
     "Gradle.ed-digital-library [:Main.main()].executor": "Run",
+    "Gradle.ed-digital-library [:UserPresentation.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",

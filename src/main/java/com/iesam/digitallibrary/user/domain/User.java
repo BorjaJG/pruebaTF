@@ -13,7 +13,7 @@ public class User {
     public final String userID;
     public final String name;
     public final String email;
-    public final String  phoneNumber;
+    public final String phoneNumber;
     public final String address;
     public final String registrationDate;
     public final String userType;
@@ -26,9 +26,9 @@ public class User {
     public final String additionalData;
 
     public User(String userID, String name, String email, String phoneNumber,
-                            String address, String registrationDate, String userType, String accountStatus,
-                            String loanHistory, String fines, String transactionHistory,
-                            String notificationPreferences,String userRole, String additionalData) {
+                String address, String registrationDate, String userType, String accountStatus,
+                String loanHistory, String fines, String transactionHistory,
+                String notificationPreferences, String userRole, String additionalData) {
         this.userID = userID;
         this.name = name;
         this.email = email;
@@ -64,6 +64,7 @@ public class User {
                 ", additionalData='" + additionalData + '\'' +
                 '}';
     }
+
     public String toStringCarnet() {
         StringBuilder sb = new StringBuilder();
         sb.append("───────────────────────────────────\n");
