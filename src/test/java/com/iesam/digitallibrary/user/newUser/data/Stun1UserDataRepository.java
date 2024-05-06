@@ -21,4 +21,11 @@ public class Stun1UserDataRepository implements UserRepository {
     public ArrayList<User> list() {
         return null;
     }
+
+    @Override
+    public void delete(String userId) {
+
+    }
+
+
 }
