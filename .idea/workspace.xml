@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de deleted User" />
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de deleted User">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/ModifyUserCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/domain/DeleteUserCasseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/domain/ModifyUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/data/Stun1UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/data/Stun1UserDataRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +35,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -67,7 +81,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/5/get_users" />
+        <entry key="$PROJECT_DIR$" value="feature/7/delete_User" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,8 +122,10 @@
   "keyToString": {
     "Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet.executor": "Run",
     "Gradle.DeleteUserCaseTest.executor": "Run",
+    "Gradle.DeleteUserCasseTest.executor": "Run",
     "Gradle.GetUserUseCaseTest.executor": "Run",
     "Gradle.GetUsersCaseTest.executor": "Run",
+    "Gradle.ModifyUseCaseTest.executor": "Run",
     "Gradle.SaveUserUseCaseTest.executor": "Run",
     "Gradle.ed-digital-library [:Main.main()].executor": "Run",
     "Gradle.ed-digital-library [:UserPresentation.main()].executor": "Run",
@@ -117,7 +133,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/7/delete__User",
+    "git-widget-placeholder": "feature/9/midify__User",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Borja/Desktop/ed-digital-library/src/test/java",
@@ -149,7 +165,20 @@
       <recent name="com.iesam.digitallibrary.user.newUser.domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.iesam.digitallibrary.Main" />
+      <module name="ed-digital-library.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iesam.digitallibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,8 +203,59 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="DeleteUserCasseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iesam.digitallibrary.user.newUser.domain.DeleteUserCasseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ModifyUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iesam.digitallibrary.user.newUser.domain.ModifyUseCaseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.ModifyUseCaseTest" />
+        <item itemvalue="Gradle.DeleteUserCasseTest" />
         <item itemvalue="Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet" />
       </list>
     </recent_temporary>
@@ -393,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714981779065</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Creacion de la funcionalidad de deleted User">
+      <option name="closed" value="true" />
+      <created>1714982161022</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714982161022</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

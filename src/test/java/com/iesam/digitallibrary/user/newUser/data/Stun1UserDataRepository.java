@@ -25,6 +25,13 @@ public class Stun1UserDataRepository implements UserRepository {
     @Override
     public void delete(String userId) {
 
+        this.delete(null);
+
+    }
+
+    @Override
+    public void modify(User user) {
+        this.modify(user);
     }
 
 

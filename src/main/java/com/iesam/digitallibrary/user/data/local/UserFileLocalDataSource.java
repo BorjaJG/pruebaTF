@@ -88,7 +88,10 @@ public class UserFileLocalDataSource  implements UserLocalDataSource {
     }
 
     @Override
-    public void modifyUser(User user) {
-
+    public void modify(User user) {
+        delete(user.userID);
+        save(user);
     }
+
+
 }

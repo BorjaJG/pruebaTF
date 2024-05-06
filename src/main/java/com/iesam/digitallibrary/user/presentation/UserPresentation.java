@@ -2,6 +2,7 @@ package com.iesam.digitallibrary.user.presentation;
 
 import com.iesam.digitallibrary.user.data.UserDataRepository;
 import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
+import com.iesam.digitallibrary.user.domain.ModifyUserCase;
 import com.iesam.digitallibrary.user.domain.User;
 
 import java.util.Scanner;
@@ -105,7 +106,13 @@ public class UserPresentation {
     }
 
     public static void modifyUser() {
-        System.out.println("Not implemented yet.");
+
+        User user = readUserDetails();
+        if (user != null) {
+            modifyUser(user);
+        }
+
+
     }
 
     public static void deleteUser() {
@@ -174,4 +181,10 @@ public class UserPresentation {
         System.out.println("----------------------------------");
         System.out.print("Select an option: ");
     }
+    private static void modifyUser(User user){
+        UserDataRepository userRepository= new UserDataRepository(new UserFileLocalDataSource());
+        userRepository.modify(user);
+    }
+
+
 }
