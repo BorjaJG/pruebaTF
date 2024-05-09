@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de deleted User">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/ModifyUserCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/domain/DeleteUserCasseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/domain/ModifyUseCaseTest.java" afterDir="false" />
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Creacion de la funcionalidad de save digiltal resources">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/UserDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserFileLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/data/local/UserLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/domain/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/data/Stun1UserDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/iesam/digitallibrary/user/newUser/data/Stun1UserDataRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +72,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/7/delete_User" />
+        <entry key="$PROJECT_DIR$" value="feature/11/save_DigitalResources" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,7 +127,7 @@
     "git-widget-placeholder": "feature/9/midify__User",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Borja/Desktop/ed-digital-library/src/test/java",
+    "last_opened_file_path": "C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/digitalresources/book",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -147,6 +138,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\digitalresources\book" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\test\java" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
     </key>
@@ -253,10 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.ModifyUseCaseTest" />
         <item itemvalue="Gradle.DeleteUserCasseTest" />
         <item itemvalue="Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.ModifyUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +474,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714982161022</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Creacion de la funcionalidad de Modify User">
+      <option name="closed" value="true" />
+      <created>1714984819478</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714984819478</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Creacion de la funcionalidad de save digiltal resources">
+      <option name="closed" value="true" />
+      <created>1715166824214</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715166824214</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +547,9 @@
     <MESSAGE value="Agrgada y actualizada funcionalidad de listar usuarios" />
     <MESSAGE value="Eliminacion del codigo de prueba" />
     <MESSAGE value="Creacion de la funcionalidad de deleted User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcionalidad de deleted User" />
+    <MESSAGE value="Creacion de la funcionalidad de Modify User" />
+    <MESSAGE value="Creacion de la funcionalidad de save digiltal resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcionalidad de save digiltal resources" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
