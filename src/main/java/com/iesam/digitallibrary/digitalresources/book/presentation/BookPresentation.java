@@ -3,6 +3,8 @@ package com.iesam.digitallibrary.digitalresources.book.presentation;
 import com.iesam.digitallibrary.digitalresources.book.data.BookDataRepository;
 import com.iesam.digitallibrary.digitalresources.book.data.local.BookFileLocalDataSource;
 import com.iesam.digitallibrary.digitalresources.book.domain.Book;
+import com.iesam.digitallibrary.user.data.UserDataRepository;
+import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
 
 
 import java.util.Scanner;
@@ -76,7 +78,13 @@ public class BookPresentation {
     }
 
     public static void deleteBook() {
-      //
+        System.out.print("Enter Book isbn to delete: ");
+        String isbn = scanner.nextLine();
+        if (!isbn.isEmpty()) {
+            deleteBookByISBN(isbn);
+        } else {
+            System.out.println("Invalid book isbn.");
+        }
     }
 
     public static void saveBook(Book book) {
@@ -88,7 +96,8 @@ public class BookPresentation {
 
 
     public static void deleteBookByISBN(String isbn) {
-        // Aquí implementa la lógica para eliminar una presentación por su ISBN.
+        BookDataRepository bookDataRepository = new BookDataRepository(new BookFileLocalDataSource());
+        bookDataRepository.delete(isbn);
         System.out.println("Presentation deleted successfully.");
     }
 
