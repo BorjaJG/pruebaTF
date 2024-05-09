@@ -9,9 +9,10 @@ public interface UserLocalDataSource {
 
     boolean save(User user);
     void delete(String id);
-    void modifyUser(User user);
+    void modify(User user);
     ArrayList<User> findAll();
     User findById(String userId);
+
 
 
 
