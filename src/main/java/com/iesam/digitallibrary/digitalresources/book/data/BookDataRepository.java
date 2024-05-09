@@ -16,19 +16,19 @@ public class BookDataRepository implements BookRepository {
 
     @Override
     public void modify(Book book) {
-     bookLocalDataSource.ModifyBookUserCase(book);
+     bookLocalDataSource.modifyBookUserCase(book);
 
 
     }
 
     @Override
     public void save(Book book) {
-        bookLocalDataSource.NewBookUseCase(book);
+        bookLocalDataSource.newBookUseCase(book);
     }
 
     @Override
     public void delete(String isbn){
-        bookLocalDataSource.DeleteBookUserCase(isbn);
+        bookLocalDataSource.deleteBookUserCase(isbn);
     }
 }
 

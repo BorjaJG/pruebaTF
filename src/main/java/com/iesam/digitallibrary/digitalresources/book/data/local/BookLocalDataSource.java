@@ -5,12 +5,11 @@ import com.iesam.digitallibrary.digitalresources.book.domain.Book;
 public interface BookLocalDataSource {
 
 
-    void  NewBookUseCase(Book book);
-    void DeleteBookUserCase(String id);
-    void ModifyBookUserCase(Book book);
+    void newBookUseCase(Book book);
 
+    void deleteBookUserCase(String id);
 
-
+    void modifyBookUserCase(Book book);
 
 
 }
