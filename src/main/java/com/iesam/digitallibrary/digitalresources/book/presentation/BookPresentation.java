@@ -5,6 +5,7 @@ import com.iesam.digitallibrary.digitalresources.book.data.local.BookFileLocalDa
 import com.iesam.digitallibrary.digitalresources.book.domain.Book;
 import com.iesam.digitallibrary.user.data.UserDataRepository;
 import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
+import com.iesam.digitallibrary.user.domain.User;
 
 
 import java.util.Scanner;
@@ -21,7 +22,7 @@ public class BookPresentation {
 
     public static void showMenu() {
         while (true) {
-           menuConsoleBook();
+            menuConsoleBook();
 
             int option = scanner.nextInt();
             scanner.nextLine();
@@ -53,7 +54,6 @@ public class BookPresentation {
         }
 
 
-
     }
 
     public static Book readBook() {
@@ -74,7 +74,12 @@ public class BookPresentation {
     }
 
     public static void modifyBook() {
-       //
+
+        Book book = readBook();
+        if (book != null) {
+            modifyBook(book);
+        }
+
     }
 
     public static void deleteBook() {
@@ -105,12 +110,17 @@ public class BookPresentation {
         System.out.println("\nWelcome to the Book Presentation Management System");
         System.out.println("-----------------------------------------------");
         System.out.println("|               Options:                      |");
-        System.out.println("|  1. Add Presentation                        |");
-        System.out.println("|  2. Modify Presentation                     |");
-        System.out.println("|  3. Delete Presentation                     |");
+        System.out.println("|  1. Add Book                                |");
+        System.out.println("|  2. Modify Book                             |");
+        System.out.println("|  3. Delete Book                             |");
         System.out.println("|  4. Exit                                    |");
         System.out.println("-----------------------------------------------");
         System.out.print("Select an option: ");
+    }
+
+    private static void modifyBook(Book book) {
+        BookDataRepository bookDataRepository = new BookDataRepository(new BookFileLocalDataSource());
+        bookDataRepository.modify(book);
     }
 }
 

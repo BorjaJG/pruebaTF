@@ -23,7 +23,7 @@ public class BookFileLocalDataSource implements BookLocalDataSource {
     private final Type typeList = new TypeToken<ArrayList<Book>>() {
     }.getType();
 
-    public void NewBookUseCase(Book book) {
+    public void newBookUseCase(Book book) {
         List<Book> books = findAll();
         books.add(book);
         saveToFile(books);
@@ -31,7 +31,7 @@ public class BookFileLocalDataSource implements BookLocalDataSource {
     }
 
     @Override
-    public void DeleteBookUserCase(String isbn) {
+    public void deleteBookUserCase(String isbn) {
         List<Book> newList = new ArrayList<>();
         List<Book> models = findAll();
         for (Book book : models) {
@@ -43,9 +43,12 @@ public class BookFileLocalDataSource implements BookLocalDataSource {
     }
 
     @Override
-    public void ModifyBookUserCase(Book book) {
-
+    public void modifyBookUserCase(Book book) {
+        deleteBookUserCase(book.isbn);
+        newBookUseCase(book);
     }
+
+
 
     public void saveList(List<Book> books) {
         saveToFile(books);
