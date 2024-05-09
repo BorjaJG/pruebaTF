@@ -31,12 +31,12 @@ public class BookFileLocalDataSource implements BookLocalDataSource {
     }
 
     @Override
-    public void DeleteBookUserCase(String id) {
+    public void DeleteBookUserCase(String isbn) {
         List<Book> newList = new ArrayList<>();
         List<Book> models = findAll();
-        for (Book model : models) {
-            if (model.isbn != id) {
-                newList.add(model);
+        for (Book book : models) {
+            if (!book.isbn.equals(isbn)) {
+                newList.add(book);
             }
         }
         saveList(newList);
