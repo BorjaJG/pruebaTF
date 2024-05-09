@@ -3,7 +3,6 @@ package com.iesam.digitallibrary.digitalresources.book.data.local;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.iesam.digitallibrary.digitalresources.book.domain.Book;
-import com.iesam.digitallibrary.user.domain.User;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,20 +13,38 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
+
 public class BookFileLocalDataSource implements BookLocalDataSource {
 
-    private String nameFile = "Biblioteca.txt";
+    private String nameFile = "LibrosListado.txt";
 
     private Gson gson = new Gson();
 
     private final Type typeList = new TypeToken<ArrayList<Book>>() {
     }.getType();
 
-    public boolean save(Book book) {
+    public void NewBookUseCase(Book book) {
         List<Book> books = findAll();
         books.add(book);
         saveToFile(books);
-        return false;
+
+    }
+
+    @Override
+    public void DeleteBookUserCase(String id) {
+        List<Book> newList = new ArrayList<>();
+        List<Book> models = findAll();
+        for (Book model : models) {
+            if (model.isbn != id) {
+                newList.add(model);
+            }
+        }
+        saveList(newList);
+    }
+
+    @Override
+    public void ModifyBookUserCase(Book book) {
+
     }
 
     public void saveList(List<Book> books) {
@@ -78,19 +95,6 @@ public class BookFileLocalDataSource implements BookLocalDataSource {
         }
         return new ArrayList<>();
     }
-
-    public void delete(String id) {
-        List<Book> newList = new ArrayList<>();
-        List<Book> models = findAll();
-        for (Book model : models) {
-            if (model.isbn!= id) {
-                newList.add(model);
-            }
-        }
-        saveList(newList);
-    }
-
-
 
 
 }

@@ -1,6 +1,9 @@
 package com.iesam.digitallibrary.digitalresources.book.presentation;
 
+import com.iesam.digitallibrary.digitalresources.book.data.BookDataRepository;
+import com.iesam.digitallibrary.digitalresources.book.data.local.BookFileLocalDataSource;
 import com.iesam.digitallibrary.digitalresources.book.domain.Book;
+
 
 import java.util.Scanner;
 
@@ -16,20 +19,20 @@ public class BookPresentation {
 
     public static void showMenu() {
         while (true) {
-            menuConsole();
+           menuConsoleBook();
 
             int option = scanner.nextInt();
             scanner.nextLine();
 
             switch (option) {
                 case 1:
-                    addPresentation();
+                    addBook();
                     break;
                 case 2:
-                    modifyPresentation();
+                    modifyBook();
                     break;
                 case 3:
-                    deletePresentation();
+                    deleteBook();
                     break;
 
                 case 4:
@@ -41,13 +44,17 @@ public class BookPresentation {
         }
     }
 
-    public static void addPresentation() {
+    public static void addBook() {
+        Book book = readBook();
+        if (book != null) {
+            saveBook(book);
+        }
 
 
 
     }
 
-    public static Book readPresentationDetails() {
+    public static Book readBook() {
         System.out.println("Enter Presentation Information:");
         System.out.print("Title: ");
         String title = scanner.nextLine();
@@ -64,35 +71,28 @@ public class BookPresentation {
         return new Book(title, author, publicationDate, isbn);
     }
 
-    public static void modifyPresentation() {
-        book = readPresentationDetails();
-        if (book != null) {
-            modifyPresentation();
-        }
+    public static void modifyBook() {
+       //
     }
 
-    public static void deletePresentation() {
-        System.out.print("Enter ISBN of the Presentation to delete: ");
-        String isbn = scanner.nextLine();
-        if (!isbn.isEmpty()) {
-            deletePresentationByISBN(isbn);
-        } else {
-            System.out.println("Invalid ISBN.");
-        }
+    public static void deleteBook() {
+      //
     }
 
-    public static void savePresentation(BookPresentation presentation) {
-        // Aquí implementa la lógica para guardar la presentación en una fuente de datos (por ejemplo, archivo).
-        System.out.println("Presentation saved successfully.");
+    public static void saveBook(Book book) {
+        BookDataRepository bookDataRepository = new BookDataRepository(new BookFileLocalDataSource());
+        bookDataRepository.save(book);
+        System.out.println("Book saved successfully.");
+
     }
 
 
-    public static void deletePresentationByISBN(String isbn) {
+    public static void deleteBookByISBN(String isbn) {
         // Aquí implementa la lógica para eliminar una presentación por su ISBN.
         System.out.println("Presentation deleted successfully.");
     }
 
-    public static void menuConsole() {
+    public static void menuConsoleBook() {
         System.out.println("\nWelcome to the Book Presentation Management System");
         System.out.println("-----------------------------------------------");
         System.out.println("|               Options:                      |");
