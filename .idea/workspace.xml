@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="ACtulizacion de funcionalidad  de save dijital recursources">
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Agragada la  funcionalidad  de Modify dijital recursources">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesFileLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesMemLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/GetDigitalResourcesUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/presentation/BookPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/presentation/BookPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/BookDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/BookDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookFileLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookMemLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookMemLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/DeleteBookUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/DeleteBookUserCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/ModifyBookUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/ModifyBookUserCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/NewBookUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/NewBookUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/presentation/BookPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/presentation/BookPresentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +67,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="module-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +92,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/11/save_DigitalResources" />
+        <entry key="$PROJECT_DIR$" value="feature/15/modify_DigitalResources" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,35 +129,36 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet.executor": "Run",
-    "Gradle.DeleteUserCaseTest.executor": "Run",
-    "Gradle.DeleteUserCasseTest.executor": "Run",
-    "Gradle.GetUserUseCaseTest.executor": "Run",
-    "Gradle.GetUsersCaseTest.executor": "Run",
-    "Gradle.ModifyUseCaseTest.executor": "Run",
-    "Gradle.SaveUserUseCaseTest.executor": "Run",
-    "Gradle.ed-digital-library [:Main.main()].executor": "Run",
-    "Gradle.ed-digital-library [:UserPresentation.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/13/delete__DigitalResources",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/digitalresources/book",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteUserCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteUserCasseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetUserUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetUsersCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModifyUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SaveUserUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ed-digital-library [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ed-digital-library [:UserPresentation.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/17/Get__DigitalResources&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/digitalresources/data&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\digitalresources\data" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\digitalresources\book" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\test\java" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
@@ -491,7 +511,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715249335195</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Agragada la  funcionalidad  de delete dijital recursources">
+      <option name="closed" value="true" />
+      <created>1715250207995</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715250207995</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Agragada la  funcionalidad  de Modify dijital recursources">
+      <option name="closed" value="true" />
+      <created>1715251474739</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715251474739</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,11 +546,16 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="feature/11/save_DigitalResources" />
                       </list>
                     </value>
                   </entry>
                 </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
               </option>
             </State>
           </value>
@@ -550,7 +591,9 @@
     <MESSAGE value="Creacion de la funcionalidad de deleted User" />
     <MESSAGE value="Creacion de la funcionalidad de Modify User" />
     <MESSAGE value="ACtulizacion de funcionalidad  de save dijital recursources" />
-    <option name="LAST_COMMIT_MESSAGE" value="ACtulizacion de funcionalidad  de save dijital recursources" />
+    <MESSAGE value="Agragada la  funcionalidad  de delete dijital recursources" />
+    <MESSAGE value="Agragada la  funcionalidad  de Modify dijital recursources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agragada la  funcionalidad  de Modify dijital recursources" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

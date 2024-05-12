@@ -1,8 +1,7 @@
-package com.iesam.digitallibrary.digitalresources.book.data.local;
+package com.iesam.digitallibrary.digitalresources.domain.book.data.local;
 
 
-import com.iesam.digitallibrary.digitalresources.book.domain.Book;
-import com.iesam.digitallibrary.user.domain.User;
+import com.iesam.digitallibrary.digitalresources.domain.book.domain.Book;
 
 import java.util.List;
 import java.util.Map;

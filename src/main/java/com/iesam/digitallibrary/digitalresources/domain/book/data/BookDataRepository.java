@@ -1,8 +1,8 @@
-package com.iesam.digitallibrary.digitalresources.book.data;
+package com.iesam.digitallibrary.digitalresources.domain.book.data;
 
-import com.iesam.digitallibrary.digitalresources.book.data.local.BookLocalDataSource;
-import com.iesam.digitallibrary.digitalresources.book.domain.Book;
-import com.iesam.digitallibrary.digitalresources.book.domain.BookRepository;
+import com.iesam.digitallibrary.digitalresources.domain.book.data.local.BookLocalDataSource;
+import com.iesam.digitallibrary.digitalresources.domain.book.domain.Book;
+import com.iesam.digitallibrary.digitalresources.domain.book.domain.BookRepository;
 
 
 public class BookDataRepository implements BookRepository {

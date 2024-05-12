@@ -1,4 +1,4 @@
-package com.iesam.digitallibrary.digitalresources.book.domain;
+package com.iesam.digitallibrary.digitalresources.domain.book.domain;
 
 public class NewBookUseCase {
     private BookRepository bookRepository;

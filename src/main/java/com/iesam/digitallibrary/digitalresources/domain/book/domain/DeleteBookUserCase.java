@@ -1,4 +1,4 @@
-package com.iesam.digitallibrary.digitalresources.book.domain;
+package com.iesam.digitallibrary.digitalresources.domain.book.domain;
 
 public class DeleteBookUserCase {
 
@@ -9,7 +9,7 @@ public class DeleteBookUserCase {
     }
 
 
-    public void execute(String isbn) {
-        this.bookRepository.delete(isbn);
+    public void execute(String idDigitalResource) {
+        this.bookRepository.delete(idDigitalResource);
     }
 }

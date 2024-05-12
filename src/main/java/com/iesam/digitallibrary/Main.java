@@ -1,13 +1,11 @@
 package com.iesam.digitallibrary;
 
 
-import com.iesam.digitallibrary.digitalresources.book.presentation.BookPresentation;
-import com.iesam.digitallibrary.user.domain.User;
+import com.iesam.digitallibrary.digitalresources.domain.book.presentation.BookPresentation;
+import com.iesam.digitallibrary.digitalresources.presentation.DigitalResourcesPresentation;
 import com.iesam.digitallibrary.user.presentation.UserPresentation;
 
 import java.util.*;
-
-import static com.iesam.digitallibrary.user.presentation.UserPresentation.*;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -19,7 +17,7 @@ public class Main {
         while (true) {
             System.out.println("\nBienvenido al sistema de gestión de la biblioteca");
             System.out.println("----------------------------------");
-            System.out.println("|  1. Menú de Libros              |");
+            System.out.println("|  1. Menú de Recursos Digitales  |");
             System.out.println("|  2. Menú de Usuarios            |");
             System.out.println("|  3. Salir                       |");
             System.out.println("----------------------------------");
@@ -30,7 +28,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    BookPresentation.showMenu();
+                    DigitalResourcesPresentation.showMenu();
                     break;
                 case 2:
                     UserPresentation.showMenu();

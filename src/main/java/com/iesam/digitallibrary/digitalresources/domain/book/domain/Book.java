@@ -1,18 +1,25 @@
-package com.iesam.digitallibrary.digitalresources.book.domain;
+package com.iesam.digitallibrary.digitalresources.domain.book.domain;
 
-public class Book {
+import com.iesam.digitallibrary.digitalresources.domain.DigitalResource;
+
+public class Book extends DigitalResource {
 
     public final String title;
     public final String author;
     public final String publicationDate;
     public final String isbn;
 
-    public Book(String title, String author, String publicationDate, String isbn) {
+
+
+    public Book(String idDigitalResource, String title, String author, String publicationDate) {
+        super(idDigitalResource);
         this.title = title;
         this.author = author;
         this.publicationDate = publicationDate;
-        this.isbn = isbn;
+        this.isbn = idDigitalResource;
+
     }
+
 
     @Override
     public String toString() {
