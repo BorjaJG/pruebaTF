@@ -1,8 +1,8 @@
-package com.iesam.digitallibrary.digitalresources.book.data.local;
+package com.iesam.digitallibrary.digitalresources.domain.book.data.local;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.iesam.digitallibrary.digitalresources.book.domain.Book;
+import com.iesam.digitallibrary.digitalresources.domain.book.domain.Book;
 
 import java.io.File;
 import java.io.FileNotFoundException;

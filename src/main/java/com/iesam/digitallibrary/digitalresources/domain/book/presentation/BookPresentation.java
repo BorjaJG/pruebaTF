@@ -1,11 +1,8 @@
-package com.iesam.digitallibrary.digitalresources.book.presentation;
+package com.iesam.digitallibrary.digitalresources.domain.book.presentation;
 
-import com.iesam.digitallibrary.digitalresources.book.data.BookDataRepository;
-import com.iesam.digitallibrary.digitalresources.book.data.local.BookFileLocalDataSource;
-import com.iesam.digitallibrary.digitalresources.book.domain.Book;
-import com.iesam.digitallibrary.user.data.UserDataRepository;
-import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
-import com.iesam.digitallibrary.user.domain.User;
+import com.iesam.digitallibrary.digitalresources.domain.book.data.BookDataRepository;
+import com.iesam.digitallibrary.digitalresources.domain.book.data.local.BookFileLocalDataSource;
+import com.iesam.digitallibrary.digitalresources.domain.book.domain.Book;
 
 
 import java.util.Scanner;
@@ -68,9 +65,9 @@ public class BookPresentation {
         String publicationDate = scanner.nextLine();
 
         System.out.print("ISBN: ");
-        String isbn = scanner.nextLine();
+        String idDigitalResource = scanner.nextLine();
 
-        return new Book(title, author, publicationDate, isbn);
+        return new Book( title, author, publicationDate, idDigitalResource);
     }
 
     public static void modifyBook() {
