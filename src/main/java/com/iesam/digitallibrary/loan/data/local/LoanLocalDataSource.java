@@ -7,6 +7,8 @@ public interface LoanLocalDataSource {
 
     void save(Loan loan);
 
+    void delete(String idLoan);
+
 
 
 

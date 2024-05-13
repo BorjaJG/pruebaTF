@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.iesam.digitallibrary.digitalresources.domain.DigitalResource;
 import com.iesam.digitallibrary.loan.domain.Loan;
+import com.iesam.digitallibrary.user.domain.User;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,6 +29,18 @@ public class LoanFileLocalDataSource implements LoanLocalDataSource {
         loans.add(loan);
         saveToFile(loans);
 
+    }
+
+    @Override
+    public void delete(String idLoan) {
+            List<Loan> newList = new ArrayList<>();
+        List<Loan> models = findAll();
+        for (Loan model : models) {
+            if (model.idLoan!= idLoan) {
+                newList.add(model);
+            }
+        }
+        saveList(newList);
     }
 
     public void saveList(List<Loan> loans) {

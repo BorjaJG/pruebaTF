@@ -39,9 +39,9 @@ public class LoanPresentation {
                     addLoan();
                     break;
                 case 2:
-
-                    break;
                 case 3:
+                    deleteLoan();
+                    break;
                 case 4:
                     System.out.println("Exiting...");
                     return;
@@ -97,8 +97,21 @@ public class LoanPresentation {
 
     }
 
+    public static void deleteLoanById(String idLoan) {
+        LoanDataRepository loanRepository = new LoanDataRepository(new LoanFileLocalDataSource());
+        loanRepository.delete(idLoan);
+        System.out.println("Loan deleted successfully.");
+    }
 
 
-
+    public static void deleteLoan() {
+        System.out.print("Enter Loan ID to delete: ");
+        String idLoan = scanner.nextLine();
+        if (!idLoan.isEmpty()) {
+            deleteLoanById(idLoan);
+        } else {
+            System.out.println("Invalid Loan ID.");
+        }
+    }
 
 }

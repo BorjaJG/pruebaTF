@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="feat: Listar recursos digitales&#10; &#10;Se crean los casos de usos para listar recursos digitales.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/GetDigitalResourceUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/LoanDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanFileLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanMemLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/LoanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/NewLoanUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/presentation/LoanPresentation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/DeleteLoanUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/LoanDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/LoanDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanFileLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/presentation/LoanPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/presentation/LoanPresentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,30 +116,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DeleteUserCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DeleteUserCasseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GetUserUseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GetUsersCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ModifyUseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SaveUserUseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ed-digital-library [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ed-digital-library [:UserPresentation.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/19/SaveNew__Loan&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/loan/domain&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.DeleteUserCaseTest.cuandoObtengoUnNuloEntoncesNoMuestroElCarnet.executor": "Run",
+    "Gradle.DeleteUserCaseTest.executor": "Run",
+    "Gradle.DeleteUserCasseTest.executor": "Run",
+    "Gradle.GetUserUseCaseTest.executor": "Run",
+    "Gradle.GetUsersCaseTest.executor": "Run",
+    "Gradle.ModifyUseCaseTest.executor": "Run",
+    "Gradle.SaveUserUseCaseTest.executor": "Run",
+    "Gradle.ed-digital-library [:Main.main()].executor": "Run",
+    "Gradle.ed-digital-library [:UserPresentation.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "feature/21/Delete__Loan",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/loan/domain",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
