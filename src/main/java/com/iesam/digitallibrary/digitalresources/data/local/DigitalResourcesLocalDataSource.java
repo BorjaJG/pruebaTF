@@ -10,7 +10,7 @@ public interface DigitalResourcesLocalDataSource {
     ArrayList<DigitalResource> findAll();
 
 
-
+    DigitalResource findById(String idDigitalResource);
 
 
 }

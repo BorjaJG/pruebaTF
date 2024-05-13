@@ -4,27 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="Agragada la  funcionalidad  de Modify dijital recursources">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesFileLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesMemLocalDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/GetDigitalResourcesUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" afterDir="false" />
+    <list default="true" id="87fead62-75fe-44f8-b01d-5022bfd30d0a" name="Changes" comment="feat: Listar recursos digitales&#10; &#10;Se crean los casos de usos para listar recursos digitales.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/GetDigitalResourceUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/LoanDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanFileLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/data/local/LoanMemLocalDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/LoanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/domain/NewLoanUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/loan/presentation/LoanPresentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/BookDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/BookDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookFileLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookFileLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/data/local/BookMemLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/data/local/BookMemLocalDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/DeleteBookUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/DeleteBookUserCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/ModifyBookUserCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/ModifyBookUserCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/domain/NewBookUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/NewBookUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/book/presentation/BookPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/presentation/BookPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/DigitalResourceDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/data/local/DigitalResourcesLocalDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/DigitalResourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/domain/book/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/digitalresources/presentation/DigitalResourcesPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iesam/digitallibrary/user/presentation/UserPresentation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/15/modify_DigitalResources" />
+        <entry key="$PROJECT_DIR$" value="feature/17/Get_DigitalResources" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,10 +141,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/17/Get__DigitalResources&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/19/SaveNew__Loan&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/digitalresources/data&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Borja/Desktop/ed-digital-library/src/main/java/com/iesam/digitallibrary/loan/domain&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -158,10 +155,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\loan\domain" />
+      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\loan" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\digitalresources\data" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\digitalresources\book" />
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\test\java" />
-      <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Borja\Desktop\ed-digital-library\src\main\java\com\iesam\digitallibrary\user\data\local" />
@@ -527,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715251474739</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="feat: Listar recursos digitales&#10; &#10;Se crean los casos de usos para listar recursos digitales.">
+      <option name="closed" value="true" />
+      <created>1715547078397</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715547078397</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +599,8 @@
     <MESSAGE value="ACtulizacion de funcionalidad  de save dijital recursources" />
     <MESSAGE value="Agragada la  funcionalidad  de delete dijital recursources" />
     <MESSAGE value="Agragada la  funcionalidad  de Modify dijital recursources" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agragada la  funcionalidad  de Modify dijital recursources" />
+    <MESSAGE value="feat: Listar recursos digitales&#10; &#10;Se crean los casos de usos para listar recursos digitales." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Listar recursos digitales&#10; &#10;Se crean los casos de usos para listar recursos digitales." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

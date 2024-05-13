@@ -4,4 +4,6 @@ import java.util.ArrayList;
 
 public interface DigitalResourceRepository {
     ArrayList<DigitalResource> list();
+
+    DigitalResource listDR(String idDigitalResource);
 }

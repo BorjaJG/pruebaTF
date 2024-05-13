@@ -4,8 +4,6 @@ import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesFile
 import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesLocalDataSource;
 import com.iesam.digitallibrary.digitalresources.domain.DigitalResource;
 import com.iesam.digitallibrary.digitalresources.domain.DigitalResourceRepository;
-import com.iesam.digitallibrary.user.data.local.UserLocalDataSource;
-import com.iesam.digitallibrary.user.domain.UserRepository;
 
 import java.util.ArrayList;
 
@@ -20,4 +18,11 @@ public class DigitalResourceDataRepository implements DigitalResourceRepository 
     public ArrayList<DigitalResource> list() {
         return digitalResourcesLocalDataSource.findAll();
     }
+
+    @Override
+    public DigitalResource listDR(String idDigitalResource) {
+        return digitalResourcesLocalDataSource.findById(idDigitalResource);
+    }
+
+
 }

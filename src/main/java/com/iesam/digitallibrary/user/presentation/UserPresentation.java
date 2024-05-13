@@ -2,12 +2,10 @@ package com.iesam.digitallibrary.user.presentation;
 
 import com.iesam.digitallibrary.user.data.UserDataRepository;
 import com.iesam.digitallibrary.user.data.local.UserFileLocalDataSource;
-import com.iesam.digitallibrary.user.domain.ModifyUserCase;
 import com.iesam.digitallibrary.user.domain.User;
 
 import java.util.Scanner;
 import java.util.List;
-import java.util.ArrayList;
 
 public class UserPresentation {
     private static Scanner scanner = new Scanner(System.in);
@@ -125,7 +123,7 @@ public class UserPresentation {
         }
     }
 
-    public static void searchUser() {
+    public static User searchUser() {
         System.out.print("Enter User ID to search: ");
         String userId = scanner.nextLine();
         User user = getUserById(userId);
@@ -135,6 +133,7 @@ public class UserPresentation {
         } else {
             System.out.println("User not found with ID: " + userId);
         }
+        return user;
     }
 
     public static void listAllUsers() {
