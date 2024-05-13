@@ -8,6 +8,13 @@ import java.util.*;
 public class UserMemLocalDataSource {
 
     private Map<String, User> dataStore = new TreeMap<>();
+    private static UserMemLocalDataSource instance=null;
+    public UserMemLocalDataSource newInstance(){
+        if(instance== null){
+            instance= new UserMemLocalDataSource();
+        }
+        return instance;
+    }
 
     public void save(User user) {
         dataStore.put(user.userID, user);

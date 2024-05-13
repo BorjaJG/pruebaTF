@@ -14,4 +14,5 @@ public interface UserRepository {
     ArrayList<User> list();
 
 
+    void delete(String userId);
 }
