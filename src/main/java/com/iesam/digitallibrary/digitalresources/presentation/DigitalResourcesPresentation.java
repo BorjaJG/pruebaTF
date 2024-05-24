@@ -1,8 +1,7 @@
 package com.iesam.digitallibrary.digitalresources.presentation;
 
 import com.iesam.digitallibrary.digitalresources.data.DigitalResourceDataRepository;
-import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesFileLocalDataSource;
-import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesLocalDataSource;
+import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesFileLocalDataSource;import com.iesam.digitallibrary.digitalresources.data.local.DigitalResourcesLocalDataSource;
 import com.iesam.digitallibrary.digitalresources.domain.DigitalResource;
 
 import com.iesam.digitallibrary.digitalresources.domain.book.presentation.BookPresentation;
@@ -55,19 +54,34 @@ public class DigitalResourcesPresentation {
         System.out.println("-----------------------------------------------");
         System.out.print("Select an option: ");
     }
-
+    public static DigitalResource searchDG() {
+        System.out.print("Enter Digital Resource ID to search: ");
+        String idDigitalResource = scanner.nextLine();
+        DigitalResource digitalResource = getUserById(idDigitalResource);
+        if (digitalResource != null) {
+            System.out.println("DigitalResource found:");
+            System.out.println(digitalResource);
+        } else {
+            System.out.println("DigitalResource not found with ID: " + idDigitalResource);
+        }
+        return digitalResource;
+    }
 
     public static void listRecurseDigital() {
         List<DigitalResource> digitalResources = getAllRecurseDigital();
         System.out.println("List of Digital Recurses:");
         for (DigitalResource digitalResource : digitalResources) {
-            System.out.println(digitalResource.idDigitalResource);
+            System.out.println(digitalResource);
         }
     }
 
     public static List<DigitalResource> getAllRecurseDigital() {
         DigitalResourceDataRepository digitalResourceRepository = new DigitalResourceDataRepository(new DigitalResourcesFileLocalDataSource());
         return digitalResourceRepository.list();
+    }
+    public static DigitalResource getUserById(String idDigitalResource) {
+        DigitalResourceDataRepository digitalResourceRepository  = new DigitalResourceDataRepository(new DigitalResourcesFileLocalDataSource());
+        return digitalResourceRepository.listDR(idDigitalResource);
     }
 
 }

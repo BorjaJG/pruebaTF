@@ -9,5 +9,10 @@ public class DigitalResource {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "DigitalResource{" +
+                "idDigitalResource='" + idDigitalResource + '\'' +
+                '}';
+    }
 }
